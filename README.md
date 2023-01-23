@@ -5,7 +5,7 @@ This project includes all the codes and files for development of classical pair 
 Please refer to reference XX for more details. 
 
 Contents 
-- data for training the potential (silica, sodium silicate, boron silicate)
 - ML codes (regularized linear regression)
 - tools for generating discriptors from simulations
 - tabular potentials for silica
+- example DFT data for training the potential (silica, sodium silicate, boron silicate) can be downloaded from 
