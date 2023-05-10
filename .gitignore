@@ -4,6 +4,7 @@ __pycache__/
 *$py.class
 
 simulation/*
+data/*
 
 # C extensions
 *.so
