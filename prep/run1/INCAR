@@ -1,0 +1,33 @@
+SYSTEM = silica
+
+IVDW=12
+
+#KPAR=4
+
+ENCUT = 500
+PREC=Normal
+ISTART = 1;ICHARG = 1
+GGA=PE
+LWAVE=.False.
+LCHARG=.False.
+
+ISMEAR = -1; SIGMA=0.25  
+NELM = 50
+NSW = 1000     
+IBRION = 0
+IALGO=48        #the same with "ALGO=Very Fast"
+ISIF = 2        #calculate stress
+POTIM = 1       #time step
+EDIFF = 1E-5; EDIFFG = -1E-2
+LREAL= Auto 
+ISYM=0
+
+NBLOCK=1
+KBLOCK=50
+NELMIN=3
+TEBEG=5000
+TEEND=3000
+SMASS=2    #if > 0  NVT
+NCORE=28
+
+#IWAVPR=12

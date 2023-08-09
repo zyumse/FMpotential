@@ -1,0 +1,21 @@
+#!/bin/bash
+#SBATCH -p RM
+#SBATCH -t 72:00:00
+#SBATCH -N 1
+#SBATCH --ntasks-per-node 28
+# echo commands to stdout 
+set -x
+
+# move to working directory
+#cd $SCRATCH
+# copy input file from your pylon2 directory 
+#   to the working directory
+#cp $PROJECT/input.data .
+
+# run OpenMP program
+#export OMP_NUM_THREADS=28
+mpirun -genv I_MPI_SHM_LMT=shm ~/software/vasp.5.4.4/bin/vasp_gam >stdout
+
+# copy output file to persistent space
+#cp output.data $PROJEC
+

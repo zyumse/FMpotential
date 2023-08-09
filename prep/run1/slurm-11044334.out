@@ -1,0 +1,4 @@
++ mpirun -genv I_MPI_SHM_LMT=shm /home/yzceeuw/software/vasp.5.4.4/bin/vasp_gam
+srun: Job step aborted: Waiting up to 302 seconds for job step to finish.
+slurmstepd: error: *** JOB 11044334 ON r472 CANCELLED AT 2020-10-02T10:50:39 DUE TO TIME LIMIT ***
+slurmstepd: error: *** STEP 11044334.0 ON r472 CANCELLED AT 2020-10-02T10:50:39 DUE TO TIME LIMIT ***
