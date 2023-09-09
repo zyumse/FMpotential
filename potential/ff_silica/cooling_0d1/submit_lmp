@@ -1,0 +1,29 @@
+#!/bin/bash
+#SBATCH -A wis172
+#SBATCH -p compute
+#SBATCH -t 48:00:00
+#SBATCH -N 1
+#SBATCH --ntasks-per-node 24
+# echo commands to stdout 
+set -x
+
+# move to working directory
+#cd $SCRATCH
+# copy input file from your pylon2 directory 
+#   to the working directory
+#cp $PROJECT/input.data .
+
+#module load intelmpi/20.4-intel20.4
+#module load LAMMPS/29Oct20-intel
+module load gcc/10.2.0 openmpi/4.0.4 fftw/3.3.8 
+module load anaconda3/2020.11
+
+# run OpenMP program
+#export OMP_NUM_THREADS=128
+#mpirun -genv I_MPI_SHM_LMT=shm ~/program/vasp_gam >stdout
+#export I_MPI_JOB_RESPECT_PROCESS_PLACEMENT=0
+#mpirun -n 24 lmp_mpi -in cooling.in 
+bash multiple_run.sh
+# copy output file to persistent space
+#cp output.data $PROJEC
+
