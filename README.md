@@ -4,16 +4,19 @@ This project includes all the codes and files for development of classical pair 
 Please refer to our paper XXX for more details. 
 
 # Data 
-Data for training the force fields (FF) for silica and silicates
+Data for training the force fields (FF) for silica and silicates. They are available for download from Zenodo via [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.8329308.svg)](https://doi.org/10.5281/zenodo.8329308). 
 
-# Prep
+
+# Data_extraction
 An example AIMD run with VASP
 
 Codes for 1) collecting forces (output) from AIMD simulations; 2) computing input features based on the local structures 
 
 # Potential
 
-- ML codes for training the model and generating the FF 
+- Codes for training the Ridge model and evaluating the atomic pair interactions
+
+- Codes for generating the FF based on the weights of the Ridge model
 
 - FF for silica (checked and can be used directly with LAMMPS)
 
