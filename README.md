@@ -3,6 +3,8 @@ This project includes all the codes and files for development of classical pair 
 
 Please refer to our paper XXX for more details. 
 
+Python packages required: numpy, scipy, sklearn
+
 # Data 
 Data for training the force fields (FF) for silica and silicates. They are available for download from Zenodo via [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.8329308.svg)](https://doi.org/10.5281/zenodo.8329308). 
 
